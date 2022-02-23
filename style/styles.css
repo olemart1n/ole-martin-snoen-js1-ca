@@ -50,16 +50,33 @@ body {
 
 }
 
-.loader {
-    border: 16px solid #f3f3f3; /* Light grey */
-    border-top: 16px solid #3498db; /* Blue */
-    border-radius: 50%;
-    width: 120px;
-    height: 120px;
-    animation: spin 2s linear infinite;
+
+  #loaderr {
+      max-height: 100px;
+      animation: spin 4s linear infinite;
+      position: absolute;
+      left: 40%;
+      top: 40%;
   }
+  #loaderr img {height: 200px}
   
   @keyframes spin {
     0% { transform: rotate(0deg); }
     100% { transform: rotate(360deg); }
   }
+
+  #blink {
+      left: 40%;
+      position: absolute;
+    animation: blink-animation 0.2s steps(2, start) infinite;
+    -webkit-animation: blink-animation 1s steps(2, start) infinite;
+  }
+  @keyframes blink-animation {
+    to {
+      visibility: hidden;
+    }
+  }
+  @-webkit-keyframes blink-animation {
+    to {
+      visibility: hidden;
+    }}

@@ -2,7 +2,6 @@
 const url = "https://api.punkapi.com/v2/beers";
 const container = document.querySelector(".beers");
 
-container.innerHTML = "";
 async function makeApi() {
 try {
         const req = await fetch(url);
@@ -10,11 +9,13 @@ try {
         console.log(json)
         for (let i = 0; i < json.length; i++) {
             console.log(json[i]);
-            createHtml(json[i])
+            createHtml(json[i]);
 }
 } catch (error) {
     console.log(error)
     container.innerHTML = `<h1 class="failure"> error. try again later</h1>`;
+} finally {
+    hideLoader("loaderr")
 }
 }
 makeApi()
@@ -28,4 +29,8 @@ function createHtml(parameter) {
                             <a href="/details.html?id=${parameter.id}" class="button">click for recipe</a>
                             </div>
                             `
+}
+
+function hideLoader(id) {
+                document.getElementById(id).style.display = "none";
 }
