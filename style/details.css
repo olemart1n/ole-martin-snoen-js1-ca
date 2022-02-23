@@ -1,0 +1,43 @@
+@import url("/style/styles.css");
+
+body {
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title {
+    font-size: 3em;
+}
+
+.images {
+    position: absolute;
+    left: 50px;
+}
+
+.one {
+    transform: rotate(240deg);
+    top: 20px;
+}
+
+.two {
+    transform: rotate(-50deg);
+    top: 110px;
+}
+
+.three {
+    transform: rotate(-90deg);
+    top: 65px;
+    left: 100px;
+}
+
+.four {
+    top:65px;
+    transform: rotate(-90deg);
+    left: 250px;
+}
+
+div p:first-child {
+    color: red;
+}
