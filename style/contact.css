@@ -18,11 +18,19 @@ fieldset {
     padding: 2em;
 }
 
+.success {
+    display: none;
+}
+
 input {
     width: 100%;
     margin-top: 2px;
     padding: 10px;
     font-size: 16px;
+}
+input:active {
+    border: 2px solid black;
+    border-style: none;
 }
 
 #button {
@@ -33,6 +41,11 @@ input {
     color: white;
     margin-top: 20px;
     cursor: pointer;
+    transition: width 0.5s;
+}
+
+#button:hover {
+    width: 220px;
 }
 
 label {

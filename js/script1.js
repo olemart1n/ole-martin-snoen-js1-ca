@@ -20,7 +20,6 @@ try {
 }
 makeApi()
 
-
 function createHtml(parameter) {
     container.innerHTML += `<div class="spesific">
                             <h3 class="name">${parameter.name}</h3>
@@ -32,5 +31,5 @@ function createHtml(parameter) {
 }
 
 function hideLoader(id) {
-                document.getElementById(id).style.display = "none";
+    document.getElementById(id).style.display = "none";
 }

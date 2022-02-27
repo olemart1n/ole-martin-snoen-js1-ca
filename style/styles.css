@@ -8,6 +8,16 @@ body {
     margin-left: 40%;
 }
 
+header a {
+  text-decoration: none;
+  border: 1px solid blue;
+  background-color: blanchedalmond;
+  padding: 10px;
+  top: 10px;
+  left: 10px;
+  position: absolute;
+}
+
 .beers {
     width: auto;
     background-color: aliceblue;
